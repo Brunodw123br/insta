@@ -1,0 +1,67 @@
+.containerCental{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerStory{
+    display: flex;
+    width: 70%;
+    height: 150px;
+    overflow: none;
+    white-space: nowrap;
+}
+
+#conteudoStory{
+    display: flex;
+    height: 150px;
+    justify-content: safe;
+    text-align: center;
+}
+
+.foto{
+    width: 70px;
+    height: 70px;
+    border-radius: 50em;
+    padding: 3px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) border-box;
+    border: 2px solid transparent;
+}
+
+.foto:hover{
+    cursor: pointer;
+}
+
+.cf{
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, rgba(26,171,71,1) 39%, rgba(100,232,35,1) 82%) border-box;
+}
+
+.Story{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+}
+
+#esquerda, #direita{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top:5%;
+    background-color: rgba(190, 190, 190, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#direita{
+right:35vw;
+}
+
+#esquerda:hover, #direita:hover{
+    cursor: pointer;
+    transform: scale(102%);
+}

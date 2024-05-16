@@ -1,5 +1,6 @@
 body {
   background: #fafafa;
+  overflow-x: hidden;
 }
 
 #root {
@@ -23,10 +24,10 @@ body {
 
 .conteudoLateralDireita {
   background: blue;
-  width:20vw;
+  width:30vw;
 }
 
 .conteudoCentral {
-  width:65vw;
-  background: yellow;
+  width:50vw;
+  background: #fdfdfd;
 }
