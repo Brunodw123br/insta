@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .conteudoLateralEsquerda{
-    background-color: #fdfdfd;
+    background-color: rgb(253, 253, 253);
     max-height: 100vh;
     border-right: solid 1px #999;
     box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -19,22 +19,34 @@
 }
 
 .conteudoLateralEsquerda .text-menu{
-    padding: 10px;
-    margin: 10px;
-    font-size: 2.5vh;
+    font-size: 1.3rem;
     width: 100%;
     text-align: justify;
     justify-items: center;
     align-items: center;
     display: flex;
+    gap: 20px;
+    margin: 5px 0 5% 10%;
 }
 
 .conteudoLateralEsquerda ul{
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+.perfil img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
 .perfil{
-    margin:auto 0 10% 0 !important;
+    margin: auto 0 10% 10%;
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+    gap:20px;
 }

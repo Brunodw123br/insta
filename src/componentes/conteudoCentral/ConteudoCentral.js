@@ -1,3 +1,4 @@
+import Feed from "./feed/Feed"
 import Stories from "./story/Stories"
 import "./story/Story.css"
 export default function ConteudoCentral(){
@@ -7,6 +8,7 @@ export default function ConteudoCentral(){
         <div className="containerStory">
             <Stories/>
         </div>
+        <Feed/>
         </div>
         </>
     )

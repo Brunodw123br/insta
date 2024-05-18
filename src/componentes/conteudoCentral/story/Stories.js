@@ -9,24 +9,33 @@ import Gabriel from '../../../imagens/Gabriel.jpg';
 import Douglas from '../../../imagens/Douglas.jpg';
 import Lucas from '../../../imagens/Lucas.jpg';
 import Aurora from '../../../imagens/Aurora.jpg';
-import Luis from '../../../imagens/Luis.jpg';
-import Maddona from '../../../imagens/Maddona.jpg';
+import Luis from '../../../imagens/Luis.jpeg';
+import Andressa from '../../../imagens/Andressa.jpg';
 import Adriana from '../../../imagens/Adriana.jpg';
 import Yule from '../../../imagens/Yule.jpg';
+import Ricardo from '../../../imagens/Ricardo.jpg';
+import Proa from '../../../imagens/Proa.png';
+import Rosani from '../../../imagens/Rosani.jpg';
+import Senac from '../../../imagens/Senac.png';
+
 
 const usuarios = [
     { nome: "Bruno", foto: Bruno, cf: true },
+    { nome: "Proa", foto: Proa, cf: true },
     { nome: "Aurora", foto: Aurora, cf: false },
+    { nome: "Senactito", foto: Senac, cf: true },
     { nome: "Luiz Gustavo", foto: Gustavo, cf: false },
     { nome: "Yule", foto: Yule, cf: true },
     { nome: "Gabriel", foto: Gabriel, cf: true },
+    { nome: "Andressa", foto: Andressa, cf: true },
+    { nome: "Rosani", foto: Rosani, cf: false },
     { nome: "Yasmin", foto: Yasmin, cf: true },
     { nome: "Adriana", foto: Adriana, cf: false },
     { nome: "Debora", foto: Debora, cf: false },
     { nome: "Lucas", foto: Lucas, cf: false },
     { nome: "Douglas", foto: Douglas, cf: false },
     { nome: "Luis", foto: Luis, cf: true },
-    { nome: "Maddona", foto: Maddona, cf: true },
+    { nome: "Ricardo", foto: Ricardo, cf: false },
 ];
 
 export default function Stories() {
@@ -77,13 +86,22 @@ export default function Stories() {
 
     return (
         <>
+            <div className='containerStory'>
             <div id='conteudoStory' ref={conteudoStoryRef} style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
                 {usuarios.map((user) => (
                     <Story key={user.id} nome={user.nome} foto={user.foto} cf={user.cf} />
+                    
                 ))}
+                
+                    <div className='existente'>
+                <button id="esquerda" ref={esquerdaRef}>&lt;</button>
+                </div>
+                <div className='existente direita'>
+                <button id="direita" ref={direitaRef}>&gt;</button>
+                </div>
             </div>
-            <button id="esquerda" ref={esquerdaRef}>&lt;</button>
-            <button id="direita" ref={direitaRef}>&gt;</button>
+            </div>
+            
         </>
     );
 }
